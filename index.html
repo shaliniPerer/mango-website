@@ -13,31 +13,51 @@
 
         <!-- Header -->
         <header>
-            <div class="logo"><img src="assets/images/Header_Logo.png" alt="Mango Logo"></div>
+
+            <div class="logo">
+                <img src="assets/images/Header_Logo.png" alt="Mango Logo">
+            </div>
 
             <div class="hamburger" id="hamburger">☰</div>
 
+            <!-- Mobile Menu -->
             <nav id="navMenu" class="nav-links">
-                <a href="#about">About Us</a>
+
+                <div class="menu-top">
+                    <div class="mobile-menu-logo">
+                        <img src="assets/images/Header_Logo.png" alt="Mango Logo">
+                    </div>
+                    <div class="close-menu" id="closeMenu">✕</div>
+                </div>
+
+                <a href="#about">About</a>
                 <a href="#products">Products</a>
                 <a href="#blog">Blogs</a>
-                <a href="#faq">Faq's</a>
+                <a href="#faq">FAQ</a>
                 <a href="#footer">Contact</a>
-                <button class="get-started-btn mobile-btn">Become a Partner →</button>
+
+                <button class="mobile-btn">Become a Partner →</button>
             </nav>
 
+            <!-- Desktop Button -->
             <button class="get-started-btn desktop-btn">Become a Partner →</button>
+
         </header>
+
+
 
         <!-- Hero -->
         <div class="hero">
-            <div class="hero-content">
-                <h1>Your future.<br>Powered by<br>Mango.</h1>
-                <p>At Mango, we build smart, future-proof software products that cut costs and elevate efficiency. Our
-                    solutions reduce operational friction, streamline growth, and free your team to focus on bold
-                    decisions,
-                    not technical complexity.</p>
-                <button class="get-started-btn">Contact Us →</button>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1>Your future.<br>Powered by<br>Mango.</h1>
+                    <p>At Mango, we build smart, future-proof software products that cut costs and elevate efficiency.
+                        Our
+                        solutions reduce operational friction, streamline growth, and free your team to focus on bold
+                        decisions,
+                        not technical complexity.</p>
+                    <button class="get-started-btn">Contact Us →</button>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="assets/images/hero.png" alt="Hero Image">
@@ -50,24 +70,28 @@
 
     <!-- About -->
     <section class="excellence-section" id="about">
-        <div class="excellence-left">
-            <span class="excellence-badge">About</span>
-            <h2>Engineering Excellence Through Continuous Learning.</h2>
-        </div>
-        <div class="excellence-right">
-            <div class="excellence-tags">
-                <h3>Engineering Excellence Through Continuous Learning.</h3>
+        <div class="excellence-container">
+            <div class="excellence-left">
+                <span class="excellence-badge">About</span>
+                <h2>Engineering Excellence Through Continuous Learning.</h2>
             </div>
-            <p>At Mango, we believe great products are built not just with expertise, but with curiosity, humility, and
-                a genuine desire to make life easier for the people who use them. Every step forward, every feature,
-                every improvement, comes from listening, learning, and challenging ourselves to do better.</p>
-            <p>SmartAuction and SmartFlow reflect that spirit. They’re crafted on a strong, scalable foundation, but
-                shaped by real conversations, real problems, and real opportunities to simplify work. We strive to turn
-                complexity into clarity, helping teams move with confidence and focus on what truly matters.</p>
-            <p>Trusted by ambitious enterprises across industries, we’re proud to support operations that are smarter,
-                smoother, and more resilient. As we continue to grow, one thing remains constant: our commitment to
-                learning, improving, and building technology that empowers people, not just processes.</p>
-        </div>
+            <div class="excellence-right">
+                <div class="excellence-tags">
+                    <h3>Engineering Excellence Through Continuous Learning.</h3>
+                </div>
+                <p>At Mango, we believe great products are built not just with expertise, but with curiosity, humility,
+                    and
+                    a genuine desire to make life easier for the people who use them. Every step forward, every feature,
+                    every improvement, comes from listening, learning, and challenging ourselves to do better.</p>
+                <p>SmartAuction and SmartFlow reflect that spirit. They’re crafted on a strong, scalable foundation, but
+                    shaped by real conversations, real problems, and real opportunities to simplify work. We strive to
+                    turn
+                    complexity into clarity, helping teams move with confidence and focus on what truly matters.</p>
+                <p>Trusted by ambitious enterprises across industries, we’re proud to support operations that are
+                    smarter,
+                    smoother, and more resilient. As we continue to grow, one thing remains constant: our commitment to
+                    learning, improving, and building technology that empowers people, not just processes.</p>
+            </div>
     </section>
 
     <section class="logo-carousel">
@@ -95,8 +119,12 @@
                 <img src="assets/images/About/EATTA.png" alt="Logo 1">
                 <img src="assets/images/About/CTTA.png" alt="Logo 2">
                 <img src="assets/images/About/Tea_Mart.png" alt="Logo 3">
+                <img src="assets/images/About/EATTA.png" alt="Logo 1">
+                <img src="assets/images/About/CTTA.png" alt="Logo 2">
+                <img src="assets/images/About/Tea_Mart.png" alt="Logo 3">
 
             </div>
+        </div>
         </div>
     </section>
 
@@ -224,7 +252,7 @@
             <div class="smartauction-left">
                 <span class="solutions-tag">Solutions</span>
 
-                <h1>SmartAuction: One Platform. Infinite Possibilities.</h1>
+                <h1>SmartAuction<br>: One Platform. Infinite Possibilities.</h1>
 
                 <div class="smartauction-image-wrapper">
                     <img src="assets/images/Solution Section/Smart Auction/Illustrations.png" alt="SmartAuction UI">
@@ -375,221 +403,229 @@
 
     <!-- Blog Section -->
     <section class="blog-section" id="blog">
-        <span class="blog-badge">BLOGS</span>
-        <h2>Popular articles from Mango</h2>
+        <div class="blog-container">
 
-        <div class="blog-grid">
+            <span class="blog-badge">BLOGS</span>
+            <h2>Popular articles from Mango</h2>
 
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-content">
-                    <p class="category tips">
-                        <span class="type">TIPS & TRICKS</span>
-                        <span class="date">OCTOBER 17, 2023</span>
-                    </p>
-                    <h3>Maximizing ROI with the Expertise of a Digital Marketing Agency</h3>
-                    <p class="read-time">7 MINUTE READ</p>
+            <div class="blog-grid">
+
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <p class="category tips">
+                            <span class="type">TIPS & TRICKS</span>
+                            <span class="date">OCTOBER 17, 2023</span>
+                        </p>
+                        <h3>Maximizing ROI with the Expertise of a Digital Marketing Agency</h3>
+                        <p class="read-time">7 MINUTE READ</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <p class="category events">
+                            <span class="type">EVENTS</span>
+                            <span class="date">SEPTEMBER 8, 2023</span>
+                        </p>
+                        <h3>Procreate set to revolutionize animation with new app for iPad, Procreate Dreams</h3>
+                        <p class="read-time">4 MINUTE READ</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <p class="category artist">
+                            <span class="type">MEET THE ARTIST</span>
+                            <span class="date">JUNE 27, 2023</span>
+                        </p>
+                        <h3>David Booth iss giving back more than he takes, teaching the joys of getting lost in arts
+                        </h3>
+                        <p class="read-time">5 MINUTE READ</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <p class="category tips">
+                            <span class="type">TIPS & TRICKS</span>
+                            <span class="date">JULY 28, 2023</span>
+                        </p>
+                        <h3>Four ways to up your Procreate game using Procreate Pocket </h3>
+                        <p class="read-time">4 MINUTE READ</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <p class="category artist">
+                            <span class="type">MEET THE ARTIST </span>
+                            <span class="date">MAY 20, 2023</span>
+                        </p>
+                        <h3>Augmented Reality, 3D Painting and diversity - Darwin Enriquez’ trail-blazing vision for
+                            tatto
+                            art</h3>
+                        <p class="read-time">7 MINUTE READ</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <p class="category artist">
+                            <span class="type">MEET THE ARTIST</span>
+                            <span class="date">MAY 15, 2023</span>
+                        </p>
+                        <h3>The endlessly entertaining ideas of Cari Vander Yacht.</h3>
+                        <p class="read-time">8 MINUTE READ</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-content">
-                    <p class="category events">
-                        <span class="type">EVENTS</span>
-                        <span class="date">SEPTEMBER 8, 2023</span>
-                    </p>
-                    <h3>Procreate set to revolutionize animation with new app for iPad, Procreate Dreams</h3>
-                    <p class="read-time">4 MINUTE READ</p>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-content">
-                    <p class="category artist">
-                        <span class="type">MEET THE ARTIST</span>
-                        <span class="date">JUNE 27, 2023</span>
-                    </p>
-                    <h3>David Booth iss giving back more than he takes, teaching the joys of getting lost in arts</h3>
-                    <p class="read-time">5 MINUTE READ</p>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-content">
-                    <p class="category tips">
-                        <span class="type">TIPS & TRICKS</span>
-                        <span class="date">JULY 28, 2023</span>
-                    </p>
-                    <h3>Four ways to up your Procreate game using Procreate Pocket </h3>
-                    <p class="read-time">4 MINUTE READ</p>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-content">
-                    <p class="category artist">
-                        <span class="type">MEET THE ARTIST </span>
-                        <span class="date">MAY 20, 2023</span>
-                    </p>
-                    <h3>Augmented Reality, 3D Painting and diversity - Darwin Enriquez’ trail-blazing vision for tatto
-                        art</h3>
-                    <p class="read-time">7 MINUTE READ</p>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-content">
-                    <p class="category artist">
-                        <span class="type">MEET THE ARTIST</span>
-                        <span class="date">MAY 15, 2023</span>
-                    </p>
-                    <h3>The endlessly entertaining ideas of Cari Vander Yacht.</h3>
-                    <p class="read-time">8 MINUTE READ</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
 
     <!-- FAQ Section -->
     <section class="faq-section" id="faq">
+        <div class="faq-container">
 
-        <div class="faq-left">
-            <span class="faq-badge">FAQ</span>
 
-            <h2>Frequently Asked Questions</h2>
+            <div class="faq-left">
+                <span class="faq-badge">FAQ</span>
 
-            <p class="faq-description">
-                Explore answers to the questions we’re asked most, designed to give
-                you clarity, confidence, and a deeper understanding of how our
-                solutions support your business.
-            </p>
+                <h2>Frequently Asked Questions</h2>
 
-            <p class="faq-small-text">Have further inquiries?</p>
+                <p class="faq-description">
+                    Explore answers to the questions we’re asked most, designed to give
+                    you clarity, confidence, and a deeper understanding of how our
+                    solutions support your business.
+                </p>
 
-            <button class="contact-btn">Contact Us</button>
-        </div>
+                <p class="faq-small-text">Have further inquiries?</p>
 
-        <div class="faq-right">
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    1. What makes Mango's platforms different <br> from generic software solutions?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    We offer comprehensive digital marketing services including SEO, PPC, content, and social media.
-                </div>
+                <button class="contact-btn">Contact Us</button>
             </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    2. Do we need any special Infrastucture <br> to use these platforms?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    You can contact support through email or our live chat.
+            <div class="faq-right">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        1. What makes Mango's platforms different <br> from generic software solutions?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We offer comprehensive digital marketing services including SEO, PPC, content, and social media.
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    3. How secure are the systems?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    Yes, we create customized services based on your business goals.
+                <div class="faq-item">
+                    <button class="faq-question">
+                        2. Do we need any special Infrastucture <br> to use these platforms?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        You can contact support through email or our live chat.
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    4. How long does implementation <br> typically take?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    Yes, we create customized services based on your business goals.
+                <div class="faq-item">
+                    <button class="faq-question">
+                        3. How secure are the systems?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we create customized services based on your business goals.
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    5. Is training provided for our teams?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    Yes, we create customized services based on your business goals.
+                <div class="faq-item">
+                    <button class="faq-question">
+                        4. How long does implementation <br> typically take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we create customized services based on your business goals.
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    6. Do you offer ongoing support?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    Yes, we create customized services based on your business goals.
+                <div class="faq-item">
+                    <button class="faq-question">
+                        5. Is training provided for our teams?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we create customized services based on your business goals.
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    7. Can you platforms integrate with our <br> existing systems?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    Yes, we create customized services based on your business goals.
+                <div class="faq-item">
+                    <button class="faq-question">
+                        6. Do you offer ongoing support?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we create customized services based on your business goals.
+                    </div>
                 </div>
-            </div>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    8. Are Software Updates Free?
-                    <span class="faq-icon">+</span>
-                </button>
-                <div class="faq-answer">
-                    Yes, we create customized services based on your business goals.
+                <div class="faq-item">
+                    <button class="faq-question">
+                        7. Can you platforms integrate with our <br> existing systems?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we create customized services based on your business goals.
+                    </div>
                 </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        8. Are Software Updates Free?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we create customized services based on your business goals.
+                    </div>
+                </div>
+
             </div>
-
-
         </div>
 
     </section>
 
     <footer class="footer" id="footer">
-        <div class="footer-inner">
+        <div class="footer-container">
+            <div class="footer-inner">
 
-            <div class="footer-left">
-                <img src="assets/images/Footer_Logo.png" alt="Mango Logo" class="footer-logo">
+                <div class="footer-left">
+                    <img src="assets/images/Footer_Logo.png" alt="Mango Logo" class="footer-logo">
 
-                <p class="footer-text">
-                    We offer a comprehensive suite of digital marketing services that cover all aspects
-                    of your online presence. From SEO and social media marketing to content creation and
-                    PPC advertising, they have the expertise and resources to handle our diverse marketing needs.
-                </p>
+                    <p class="footer-text">
+                        We offer a comprehensive suite of digital marketing services that cover all aspects
+                        of your online presence. From SEO and social media marketing to content creation and
+                        PPC advertising, they have the expertise and resources to handle our diverse marketing needs.
+                    </p>
 
-                <p class="footer-company">Sorota Technologies FZC-LLC</p>
+                    <p class="footer-company">Sorota Technologies FZC-LLC</p>
+                </div>
+
+                <div class="footer-social">
+                    <img src="assets/images/Facebook.png" alt="Facebook">
+                    <img src="assets/images/Instagram.png" alt="Twitter">
+                    <img src="assets/images/Linkedin.png" alt="LinkedIn">
+                </div>
+
+                <button class="scroll-to-top" id="scrollToTop">↑</button>
+
             </div>
-
-            <div class="footer-social">
-                <img src="assets/images/Facebook.png" alt="Facebook">
-                <img src="assets/images/Instagram.png" alt="Twitter">
-                <img src="assets/images/Linkedin.png" alt="LinkedIn">
-            </div>
-
-            <button class="scroll-to-top" id="scrollToTop">↑</button>
-
         </div>
     </footer>
 
     <script src="script.js"></script>
- </body>
+</body>
 
 </html>

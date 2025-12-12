@@ -1,3 +1,24 @@
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+const closeMenu = document.getElementById("closeMenu");
+
+hamburger.onclick = () => {
+    navMenu.classList.add("active");
+    document.body.classList.add("no-scroll");   
+};
+
+closeMenu.onclick = () => {
+    navMenu.classList.remove("active");
+    document.body.classList.remove("no-scroll"); 
+};
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.onclick = () => {
+        navMenu.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+    };
+});
+
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
