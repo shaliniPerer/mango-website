@@ -597,7 +597,7 @@ header .logo img {
 
 /* SmartAuction Section */
 .smartauction-section {
-    padding: 80px 60px;
+    padding: 80px 20px;
     background: url("assets/images/Solution Section/Smart Auction/background.png") 
         no-repeat center center / cover;
     border-radius: 28px;
@@ -613,8 +613,9 @@ header .logo img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px; 
-    padding-left: 100px; 
+    padding-left: 100px;   /* SAME LEFT ALIGN AS ABOUT */
+    padding-right: 20px;
+    
 }
 
 .smartauction-left {
@@ -742,7 +743,7 @@ header .logo img {
 
 /*smartflow-section*/
 .smartflow-section {
-    padding: 80px 60px;
+    padding: 80px 20px;
     background: url("assets/images/Solution Section/Smart Flow/background.png") no-repeat center center / cover;
     border-radius: 28px;
     color: #fff;
@@ -758,7 +759,11 @@ header .logo img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 100px; 
+    padding-left: 100px;  
+    padding-right: 20px;
+
+    
+    
 }
 
 .smartflow-left {
@@ -766,6 +771,8 @@ header .logo img {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 0px;
+  
 }
 
 .solutions-tag {
@@ -783,7 +790,7 @@ header .logo img {
     font-weight: 700;
     line-height: 1.25;
     margin-bottom: 10px;
-    padding-left: 16px;
+    padding-left: 0px;
 }
 
 .smartflow-badge {
@@ -871,6 +878,7 @@ header .logo img {
     .smartflow-content {
         flex-direction: column;
         text-align: center;
+        padding: 0 20px; 
     }
 
     .smartflow-badge {
@@ -888,17 +896,17 @@ header .logo img {
 
 .blog-section {
 
-    padding: 80px 0px;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
-    padding-left: 100px; 
 }
 
 .blog-container {
     max-width: 1200px;
     width: 100%;
-    padding: 0 50px;
-    padding-left: 16px;
+    margin: 0 auto;   
+    padding-left: 100px;         
+    padding-right: 20px;
 }
 
 .blog-badge {
@@ -922,9 +930,7 @@ header .logo img {
 }
 
 .blog-card {
-    max-width: 330px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .blog-image {
@@ -980,19 +986,17 @@ header .logo img {
 }
 
 @media (max-width: 768px) {
+    .blog-container {
+        padding: 0 20px;          
+    }
+
     .blog-grid {
         grid-template-columns: 1fr;
         justify-items: center;
     }
 
     .blog-card {
-        width: 100%;
         max-width: 330px;
-        margin: 0 auto;
-    }
-
-    .blog-section {
-        padding: 50px 20px;
     }
 
     .blog-image {
@@ -1011,10 +1015,9 @@ header .logo img {
 /* FAQ SECTION  */
 
 .faq-section {
-    padding: 80px 0;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
-    padding-left: 100px; 
 }
 
 .faq-container {
@@ -1023,11 +1026,13 @@ header .logo img {
     display: flex;
     justify-content: space-between;
     gap: 80px;
+    padding-left: 100px;
+    padding-right: 20px;
 }
 
 .faq-left {
     flex: 1;
-    padding-left: 16px;
+    padding-left: 0px;
 }
 
 .faq-badge {
@@ -1116,12 +1121,14 @@ header .logo img {
 @media (max-width: 768px) {
 
     .faq-section {
-        padding: 60px 30px;
+        padding: 60px 20px; 
         text-align: left;
     }
 
     .faq-container {
         flex-direction: column;
+        padding-left: 20px;   
+        padding-right: 20px;   
         gap: 40px;
     }
 
@@ -1189,10 +1196,9 @@ header .logo img {
 
 /* FOOTER */
 .footer {
-    padding: 80px 0;
+    padding: 80px 20px;
     position: relative;
-    padding-left: 100px; 
-}
+}   
 
 .footer::before {
     content: "";
@@ -1204,14 +1210,16 @@ header .logo img {
     max-width: 1200px;
     height: 1px;
     background: #0e0202;
-    padding-left: 100px;
+
+  
 }
 
 .footer-container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding-left: 100px;
+    padding-right: 20px;
 }
 
 .footer-inner {
@@ -1287,7 +1295,13 @@ header .logo img {
 
 @media (max-width: 900px) {
     .footer {
-        padding: 60px 0;
+        padding: 60px 20px;
+    }
+
+    
+    .footer-container {
+        padding-left: 20px;      
+        padding-right: 20px;
     }
 
     .footer-inner {
