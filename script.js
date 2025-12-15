@@ -96,11 +96,22 @@ window.addEventListener("scroll", () => {
     }
 });
 
-scrollToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const revealSections = document.querySelectorAll(".reveal-section");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // animate once
+                }
+            });
+        },
+        {
+            threshold: 0.2, // 20% visible triggers animation
+        }
+    );
+
+    revealSections.forEach(section => observer.observe(section));
 });
-
-

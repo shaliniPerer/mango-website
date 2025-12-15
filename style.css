@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background: #fff;
     color: #000;
     overflow-x: hidden;
@@ -20,7 +21,6 @@ body {
 .hero-section {
     background: #f5f5f5;
     overflow-x: hidden;
-    
 }
 
 /* Header */
@@ -44,7 +44,6 @@ header .logo img {
     width: auto;
     cursor: pointer;
     padding: 10px 16px;
-     
 }
 
 .desktop-btn {
@@ -76,6 +75,9 @@ header .logo img {
 }
 
 .get-started-btn {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 14px;
     background: #000;
     color: #fff;
     padding: 10px 24px;
@@ -86,8 +88,12 @@ header .logo img {
     font-weight: 600;
     transition: transform 0.3s, box-shadow 0.3s;
     margin-right: 50px;
-
 }
+.arrow {
+    margin-left: 12px; 
+    transition: transform 0.3s;
+}
+
 
 .get-started-btn:hover {
     transform: scale(1.05);
@@ -120,6 +126,10 @@ header .logo img {
     text-align: left;
 }
 
+ .get-started-btn {
+        display: block;
+    }
+
 @media (max-width: 900px) {
 
     header {
@@ -133,7 +143,7 @@ header .logo img {
         cursor: pointer;
     }
 
-    .desktop-btn {
+    .get-started-btn {
         display: none;
     }
 
@@ -207,19 +217,21 @@ header .logo img {
         overflow: hidden;
     }
 
+   .desktop-btn {
+        display: none;
+    }
 
 }
 
-
-/* Hero Section */
+/* HERO SECTION  */
 .hero {
     display: flex;
     align-items: center;
-    padding: 60px 0 80px;
+    padding: 100px 0 120px;
     background: transparent;
     position: relative;
     overflow: hidden;
-    min-height: 420px;
+    min-height: 600px;
     margin-top: 30px;
 }
 
@@ -227,14 +239,12 @@ header .logo img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     position: relative;
     z-index: 2;
-    padding: 0 16px; 
 }
-
 
 .hero-content {
     flex: 1;
@@ -280,6 +290,27 @@ header .logo img {
     max-width: 1200px;
 }
 
+.hero-button {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-right: 50px;
+}
+.arrow {
+    margin-left: 12px; 
+    transition: transform 0.3s;
+}
+
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -313,6 +344,14 @@ header .logo img {
         top: auto;
         bottom: auto;
     }
+
+    .hero-button {
+        align-items: center;
+        font-size: 12px;      
+        padding: 8px 18px;     
+        margin-right: 20px;    
+        border-radius: 20px;   
+    }
 }
 
 @media (max-width: 480px) {
@@ -335,7 +374,27 @@ header .logo img {
     }
 }
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* Logo Carousel Section */
+.clients-title {
+    color: #777;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: baseline;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
 .logo-carousel {
     overflow: hidden;
     background: #fff;
@@ -377,7 +436,7 @@ header .logo img {
     gap: 0px;
     align-items: baseline;
     justify-content: center;
-    padding: 80px 20px; 
+    padding: 80px 20px;
 }
 
 .excellence-container {
@@ -386,10 +445,11 @@ header .logo img {
     display: flex;
     gap: 50px;
     align-items: baseline;
-    padding-left: 100px;  
+    padding-left: 100px;
     padding-right: 20px;
     margin: 0 auto;
 }
+
 .excellence-left {
     padding-right: 20px;
     flex: 1;
@@ -528,7 +588,7 @@ header .logo img {
 
 .features-wrapper {
     display: flex;
-    overflow: hidden;
+    overflow: visible;
     width: 100vw;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -536,11 +596,10 @@ header .logo img {
     position: relative;
 }
 
-
 .features-track {
     display: flex;
-    gap: 15px;
-    align-items: center;
+    gap: 20px;
+    align-items: stretch;
     animation: scrollFeatures 45s linear infinite;
     padding: 0;
 }
@@ -549,25 +608,26 @@ header .logo img {
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-50%);
     }
 }
 
+/* Feature Card */
 .feature-card {
     text-align: left;
     background: #fff;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 40px;
+    border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    width: 360px;
-    height: 220px;
+    width: 380px;
+    height: 300px;                
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
@@ -576,8 +636,8 @@ header .logo img {
 }
 
 .feature-card img {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     display: block;
     margin: 0;
@@ -595,11 +655,53 @@ header .logo img {
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+
+    .operations-section {
+        padding: 60px 20px;
+    }
+
+    .operations-section h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .features-track {
+        gap: 20px; 
+    }
+
+
+    .feature-card {
+        width: 380px;
+        height: 300px;
+        padding: 40px;
+        border-radius: 16px;
+    }
+
+    .feature-card h3 {
+        font-size: 20px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .feature-card {
+        width: 380px;
+        height: 300px;
+        padding: 40px;
+    }
+}
+
+
+
 /* SmartAuction Section */
 .smartauction-section {
     padding: 80px 20px;
-    background: url("assets/images/Solution Section/Smart Auction/background.png") 
-        no-repeat center center / cover;
+    background: url("assets/images/Solution Section/Smart Auction/background.png") no-repeat center center / cover;
     border-radius: 28px;
     color: #fff;
     font-family: "Inter", sans-serif;
@@ -613,9 +715,9 @@ header .logo img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 100px;  
+    padding-left: 100px;
     padding-right: 20px;
-    
+
 }
 
 .smartauction-left {
@@ -623,7 +725,7 @@ header .logo img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 .solutions-tag {
@@ -661,7 +763,7 @@ header .logo img {
     max-width: 420px;
     border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.35);
+    box-shadow: none;
 }
 
 .smartauction-image-wrapper img {
@@ -685,6 +787,8 @@ header .logo img {
     line-height: 1.6;
     opacity: 0.9;
     margin-bottom: 28px;
+   
+    
 }
 
 .sub-title {
@@ -728,26 +832,26 @@ header .logo img {
     .smartauction-content {
         flex-direction: column;
         text-align: center;
-        padding-left:0 ;   
+        padding-left: 0;
         padding-right: 0;
         gap: 30px;
     }
 
-    
+
     .smartauction-left,
     .smartauction-right {
         width: 100%;
-        align-items: center; 
+        align-items: center;
     }
 
     .smartauction-image-wrapper {
-        margin: 0 auto; 
-         
+        margin: 0 auto;
+
     }
 
-    .smartauction-right h1{
-        font-size: 28px; 
-}
+    .smartauction-right h1 {
+        font-size: 28px;
+    }
 
     .smartauction-badge {
         left: 50%;
@@ -755,7 +859,7 @@ header .logo img {
     }
 
     .smartauction-left h1 {
-        font-size: 32px; 
+        font-size: 32px;
     }
 
     .auction-list li {
@@ -781,11 +885,11 @@ header .logo img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 100px;  
+    padding-left: 100px;
     padding-right: 20px;
 
-    
-    
+
+
 }
 
 .smartflow-left {
@@ -795,7 +899,7 @@ header .logo img {
     gap: 20px;
     padding-left: 0px;
     position: relative;
-  
+
 }
 
 .solutions-tag {
@@ -834,7 +938,7 @@ header .logo img {
     max-width: 420px;
     border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.35);
+    box-shadow: none;
 }
 
 .smartflow-image-wrapper img {
@@ -853,11 +957,25 @@ header .logo img {
     margin-bottom: 20px;
 }
 
+.smartflow-right .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+
+.smartflow-right .text-wrapper .intro-text {
+    margin: 0;
+    padding-top: 110px;
+}
+
 .intro-text {
     font-size: 17px;
     line-height: 1.6;
     opacity: 0.9;
     margin-bottom: 28px;
+   
 }
 
 .sub-title {
@@ -901,24 +1019,24 @@ header .logo img {
     .smartflow-content {
         flex-direction: column;
         text-align: center;
-        padding: 0 20px; 
+        padding: 0 20px;
     }
 
     .smartflow-badge {
         left: 50%;
         transform: translateX(-50%);
-         top: -10px;
+        top: -10px;
     }
 
     .smartflow-left h1 {
-        font-size: 32px; 
+        font-size: 32px;
     }
 
     .smartflow-left {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         position: relative;
     }
 
@@ -927,11 +1045,43 @@ header .logo img {
         justify-content: center;
     }
 
-    
+
     .smartflow-right h1 {
-        font-size: 28px; 
+        font-size: 28px;
+    }
+
+    .intro-text,
+    .sub-title {
+        text-align: center;
+    }
+
+     .smartflow-right .text-wrapper .intro-text {
+        padding-top: 0;   
+    }
+
+
+    .auction-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auction-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .bullet-icon {
+        margin: 0;
+    }
+
+    .auction-list li div {
+        text-align: center;
+    }
 }
-}
+
 
 
 /* BLOG SECTION*/
@@ -946,8 +1096,8 @@ header .logo img {
 .blog-container {
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;   
-    padding-left: 100px;         
+    margin: 0 auto;
+    padding-left: 100px;
     padding-right: 20px;
 }
 
@@ -1029,7 +1179,7 @@ header .logo img {
 
 @media (max-width: 768px) {
     .blog-container {
-        padding: 0 20px;          
+        padding: 0 20px;
     }
 
     .blog-grid {
@@ -1163,14 +1313,14 @@ header .logo img {
 @media (max-width: 768px) {
 
     .faq-section {
-        padding: 60px 20px; 
+        padding: 60px 20px;
         text-align: left;
     }
 
     .faq-container {
         flex-direction: column;
-        padding-left: 20px;   
-        padding-right: 20px;   
+        padding-left: 20px;
+        padding-right: 20px;
         gap: 40px;
     }
 
@@ -1240,7 +1390,7 @@ header .logo img {
 .footer {
     padding: 80px 20px;
     position: relative;
-}   
+}
 
 .footer::before {
     content: "";
@@ -1253,7 +1403,7 @@ header .logo img {
     height: 1px;
     background: #0e0202;
 
-  
+
 }
 
 .footer-container {
@@ -1299,7 +1449,7 @@ header .logo img {
 }
 
 .footer-social img {
-    width: 18px;
+    width: 40px;
     height: auto;
     object-fit: contain;
     cursor: pointer;
@@ -1340,9 +1490,9 @@ header .logo img {
         padding: 60px 20px;
     }
 
-    
+
     .footer-container {
-        padding-left: 20px;      
+        padding-left: 20px;
         padding-right: 20px;
     }
 
@@ -1438,4 +1588,16 @@ header .logo img {
     .excellence-section h2 {
         font-size: 32px;
     }
+}
+
+/* Page Load Popup Effect */
+.reveal-section {
+    opacity: 0;
+    transform: translateY(60px) scale(0.98);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-section.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
